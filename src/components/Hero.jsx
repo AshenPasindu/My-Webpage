@@ -113,7 +113,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="hero-greeting-aaa"
         >
-          HEY, I'M
+          HEY, I'M...
         </motion.div>
 
         <h1 className="hero-name-aaa">
