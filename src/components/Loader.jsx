@@ -41,7 +41,7 @@ export default function Loader() {
                 transition={{ duration: 0.5 }}
                 className="loader-name"
               >
-                Ashen Pasindu_
+                Ashen Pasindu
               </motion.h1>
             </div>
 
