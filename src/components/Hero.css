@@ -1,0 +1,127 @@
+.hero-bg {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background-color: #000;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero-video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+.hero-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 80px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Ensure everything is left-aligned */
+}
+
+.hero-greeting-aaa {
+  color: #e0e0e0;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  font-family: monospace;
+}
+
+.hero-name-aaa {
+  font-size: clamp(80px, 12vw, 160px);
+  font-weight: 900;
+  line-height: 0.9;
+  margin-bottom: 30px;
+  letter-spacing: -4px;
+  color: #ffffff;
+  perspective: 1000px;
+}
+
+.name-line {
+  display: block;
+  height: 1.1em;
+}
+
+.magnetic-letter {
+  cursor: default;
+  transform-style: preserve-3d;
+}
+
+.letter-inner {
+  display: inline-block;
+}
+
+/* Updated positioning to be directly under "Pasindu" */
+.hero-description-aaa {
+  color: #e0e0e0;
+  font-size: clamp(16px, 1.5vw, 20px);
+  line-height: 1.6;
+  max-width: 600px;
+  font-weight: 400;
+  margin-top: 20px; /* Spacing below the name */
+  text-align: left;
+  border-left: 2px solid #16f2c5; /* Accent line on the left */
+  padding-left: 20px;
+  position: relative;
+}
+
+.scroll-indicator-aaa {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .hero-container {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    padding: 0 20px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero-name-aaa {
+    font-size: clamp(50px, 15vw, 80px);
+    letter-spacing: -2px;
+  }
+
+  .hero-description-aaa {
+    margin-top: 40px;
+    text-align: center;
+    border-left: none;
+    border-top: 2px solid #16f2c5;
+    padding-left: 0;
+    padding-top: 20px;
+    font-size: 14px;
+  }
+}

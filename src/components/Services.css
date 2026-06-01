@@ -1,0 +1,89 @@
+.services-figma {
+  min-height: 100vh;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+}
+
+.services-container-figma {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  width: 100%;
+}
+
+.services-main-title {
+  font-size: clamp(40px, 6vw, 60px);
+  font-weight: 700;
+  margin-bottom: 80px;
+  text-align: left;
+  letter-spacing: -2px;
+}
+
+.services-grid-figma {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+}
+
+.service-card-figma {
+  border: 1px solid #000000;
+  padding: 48px 40px;
+  background-color: transparent;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.service-card-figma:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.service-icon-figma {
+  margin-bottom: 32px;
+  transition: transform 0.4s ease;
+}
+
+.service-card-figma:hover .service-icon-figma {
+  transform: scale(1.1);
+  color: #16f2c5; /* Using your accent color for hover icon */
+}
+
+.service-title-figma {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  letter-spacing: -1px;
+}
+
+.service-description-figma {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #4b5563; /* Gray text for light mode */
+  transition: color 0.4s ease;
+}
+
+.service-card-figma:hover .service-description-figma {
+  color: #9ca3af; /* Lighter gray for dark mode */
+}
+
+@media (max-width: 768px) {
+  .services-container-figma {
+    padding: 0 24px;
+  }
+
+  .services-main-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
+
+  .service-card-figma {
+    padding: 40px 30px;
+  }
+}

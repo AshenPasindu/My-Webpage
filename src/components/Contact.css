@@ -1,0 +1,173 @@
+.contact-figma-section {
+  min-height: 100vh;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 120px 0;
+  overflow: hidden;
+}
+
+.contact-figma-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.contact-heading-wrap {
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-display-title {
+  font-size: clamp(60px, 12vw, 150px);
+  font-weight: 800;
+  line-height: 0.9;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.magnetic-char {
+  transition: all 0.2s ease;
+  cursor: default;
+}
+
+.contact-grid-figma {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: flex-start;
+}
+
+.contact-intro-text {
+  font-size: 20px;
+  color: #9ca3af;
+  margin-bottom: 48px;
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+.contact-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.contact-social-flex {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+.social-icon-btn {
+  padding: 16px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon-btn:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.status-badge-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 20px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #22c55e;
+  border-radius: 50%;
+}
+
+.status-label-text {
+  font-size: 13px;
+  font-family: monospace;
+  color: #d1d5db;
+  letter-spacing: 0.1em;
+}
+
+.contact-form-figma {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.figma-input, .figma-textarea {
+  width: 100%;
+  padding: 20px;
+  background: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.figma-input::placeholder, .figma-textarea::placeholder {
+  color: #4b5563;
+}
+
+.figma-input:focus, .figma-textarea:focus {
+  outline: none;
+  border-color: #9ca3af;
+}
+
+.figma-textarea {
+  resize: none;
+}
+
+.figma-submit-btn {
+  width: 100%;
+  padding: 20px;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.figma-submit-btn:hover {
+  background-color: #e5e7eb;
+}
+
+@media (max-width: 1024px) {
+  .contact-grid-figma {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+}
+
+@media (max-width: 640px) {
+  .contact-figma-container {
+    padding: 0 24px;
+  }
+
+  .contact-display-title {
+    font-size: 50px;
+  }
+}
