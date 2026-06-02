@@ -25,7 +25,7 @@ const projects = [
     description: "Modern portfolios have also been created, with an example being one created using basic HTML, CSS, and JavaScript..",
     image: "https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
     tags: ["HTML", "CSS", "JavaScript"],
-    github: "https://github.com/AshenPasindu/HTML-CSS-JS-POTOPOLIO-TEST",
+    github: "https://github.com/AshenPasindu/Simple_WEB",
     link: "#"
   },
 ];
